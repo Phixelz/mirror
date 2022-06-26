@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import {
   View,
   Text,
@@ -7,6 +7,35 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import {Card} from '../components/Card';
+
+const Notification = props => {
+  const [isShowingText, setIsShowingText] = useState(true);
+
+  useEffect(() => {
+    const toggle = setInterval(() => {
+      setIsShowingText(!isShowingText);
+    }, 15000);
+
+    return () => clearInterval(toggle);
+  });
+
+  if (!isShowingText) {
+    return (
+      <Text>
+        {props.Welcome}
+        {props.Freemium}  
+      </Text>
+    );
+    
+  } else {
+    return (
+      <Text>
+        {props.Premium}
+        {props.Subscribe}
+      </Text>
+    );
+  }
+};
 
 export function Home() {
   return (
@@ -24,10 +53,13 @@ export function Home() {
             color: '#404040',
             fontWeight: '700',
           }}>
-          Seja bem-vindo(a), Investidor!
+          <Notification Welcome="Seja bem-vindo, Investor!" />
+          <Notification Subscribe="Assine o Mirror Premium!" />
         </Text>
+
         <Text style={{fontSize: 15, fontWeight: '400', color: '#909090'}}>
-          Você está utilizando a versão freemium (Limitada) do app.
+          <Notification Freemium="Você está utilizando a versão freemium (Limitada) do app." />
+          <Notification Premium="Seja Premium e assine a versão completa do Mirror Analytic" />
         </Text>
       </View>
 
@@ -75,7 +107,13 @@ export function Home() {
         <Text style={{fontSize: 15, color: '#909090'}}>
           Você ainda não possui nenhuma carteira
         </Text>
-        <Text style={{ marginBottom: 16, fontSize: 20, fontWeight: '700', color: '#404040'}}>
+        <Text
+          style={{
+            marginBottom: 16,
+            fontSize: 20,
+            fontWeight: '700',
+            color: '#404040',
+          }}>
           Crie sua primeira carteira
         </Text>
         <TouchableOpacity activeOpacity={0.9}>
@@ -126,5 +164,12 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderRadius: 8,
     paddingVertical: 16,
+  },
+  input: {
+    backgroundColor: '#F2F2F2',
+    padding: 12,
+    borderRadius: 8,
+    marginBottom: 16,
+    paddingHorizontal: 16,
   },
 });

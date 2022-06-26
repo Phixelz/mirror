@@ -4,7 +4,7 @@ import { Home } from "./src/pages/Home";
 import { CreateGoal } from "./src/pages/CreateGoal";
 
 export function App() {
-  return <SignIn/>
+  return <CreateGoal/>
 }
 
 export default App;

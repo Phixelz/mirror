@@ -45,6 +45,7 @@ export function CreateGoal() {
         <TextInput
           style={styles.input}
           placeholder="Ex: 1000"
+          keyboardType="numeric"
           placeholderTextColor="#9E9E9E"
         />
 
@@ -52,7 +53,8 @@ export function CreateGoal() {
 
         <TextInput
           style={styles.input}
-          placeholder="Ex: 1.000,00"
+          placeholder="R$ 0,00"
+          keyboardType="numeric"
           placeholderTextColor="#9E9E9E"
         />
 
@@ -61,6 +63,7 @@ export function CreateGoal() {
         <TextInput
           style={styles.input}
           placeholder="Ex: 12"
+          keyboardType="numeric"
           placeholderTextColor="#9E9E9E"
         />
       </ScrollView>
@@ -102,14 +105,14 @@ const styles = StyleSheet.create({
     fontSize: 15,
     fontWeight: '500',
     color: '#404040',
-    marginBottom: 8,
+    marginBottom: 4,
   },
   input: {
     marginHorizontal: 24,
     backgroundColor: '#F2F2F2',
     padding: 12,
     borderRadius: 8,
-    marginBottom: 16,
+    marginBottom: 24,
     paddingHorizontal: 16,
   },
   footer: {

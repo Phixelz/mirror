@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
     borderRadius: 8,
   },
   indicetitle: {
-    fontSize: 18,
+    fontSize: 16,
     color: '#404040',
     fontWeight: '300',
   },
@@ -41,22 +41,22 @@ const styles = StyleSheet.create({
     fontWeight: '700',
   },
   indicevar: {
-    fontSize: 18,
+    fontSize: 16,
     color: '#C25B5B',
     fontWeight: '500',
   },
   divider: {
-    marginVertical: 18,
+    marginVertical: 16,
     borderBottomWidth: 1,
     borderColor: '#F0F0F0',
   },
   open: {
-    fontSize: 16,
+    fontSize: 14,
     color: '#404040',
     fontWeight: '500',
   },
   up: {
-    fontSize: 16,
+    fontSize: 14,
     color: '#4DB878',
     fontWeight: '500',
   },
