@@ -29,7 +29,7 @@ export function List() {
             fontWeight: '400',
             color: '#4E4E4E',
           }}>
-          Acesse a lista de fundos imobiliários e acões.
+          Acesse a lista de fundos imobiliários, acões, ETFs, BDRs e Debêntures.
         </Text>
       </View>
 
@@ -66,12 +66,7 @@ export function List() {
 
       <ScrollView showsVerticalScrollIndicator={false}>
         <Text
-          style={{
-            marginBottom: 8,
-            fontSize: 18,
-            fontWeight: '700',
-            color: '#404040',
-          }}>
+          style={styles.sectiontitle}>
           Fundos Imobiliários
         </Text>
 
@@ -83,6 +78,7 @@ export function List() {
             tickervar="Kinea Indices FDO INV IMOB"
             viewmore="Ver detalhes"
           />
+
           <Ticker
             tickertitle="VGIP11"
             tag="Papel"
@@ -90,6 +86,7 @@ export function List() {
             tickervar="Valora Cri Indice FDO INV IMOB"
             viewmore="Ver detalhes"
           />
+
           <Ticker
             tickertitle="XPLG11"
             tag="Logística"
@@ -99,15 +96,7 @@ export function List() {
           />
         </View>
 
-        <Text
-          style={{
-            marginBottom: 8,
-            fontSize: 18,
-            fontWeight: '700',
-            color: '#404040',
-          }}>
-          Ações
-        </Text>
+        <Text style={styles.sectiontitle}>Ações</Text>
 
         <Ticker
           tickertitle="TAEE11"
@@ -161,5 +150,11 @@ const styles = StyleSheet.create({
     borderRadius: 4,
     borderColor: '#F2F2F2',
     borderWidth: 1,
+  },
+  sectiontitle: {
+    marginBottom: 8,
+    fontSize: 18,
+    fontWeight: '700',
+    color: '#404040',
   },
 });
