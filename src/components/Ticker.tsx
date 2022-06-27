@@ -40,14 +40,14 @@ const styles = StyleSheet.create({
     borderColor: '#E7E7E7',
     borderWidth: 1,
     fontSize: 14,
-    color: '#606060',
+    color: 'rgba(40, 40, 40, 0.7)',
     fontWeight: '500',
     borderRadius: 4,
     paddingHorizontal: 12,
   },
   tickervalue: {
     fontSize: 18,
-    color: '#404040',
+    color: '#4E4E4E',
     fontWeight: '700',
   },
   tickervar: {
