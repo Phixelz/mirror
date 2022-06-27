@@ -1,6 +1,6 @@
 ![App Cover](.github/cover.png)
 
-# Mirror
+# MirrorApp
 
 Mirror Analytic
 
