@@ -111,7 +111,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 24,
     backgroundColor: '#F2F2F2',
     padding: 12,
-    borderRadius: 8,
+    borderRadius: 4,
     marginBottom: 24,
     paddingHorizontal: 16,
   },
@@ -125,7 +125,7 @@ const styles = StyleSheet.create({
   createbutton: {
     backgroundColor: '#404040',
     alignItems: 'center',
-    borderRadius: 8,
+    borderRadius: 4,
     paddingHorizontal: 32,
     paddingVertical: 16,
   },

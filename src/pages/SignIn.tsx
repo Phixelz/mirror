@@ -105,7 +105,7 @@ const styles = StyleSheet.create({
   input: {
     backgroundColor: '#F2F2F2',
     padding: 12,
-    borderRadius: 8,
+    borderRadius: 4,
     marginBottom: 16,
     paddingHorizontal: 16,
   },
@@ -134,7 +134,7 @@ const styles = StyleSheet.create({
   enterbutton: {
     alignItems: 'center',
     backgroundColor: '#404040',
-    borderRadius: 8,
+    borderRadius: 4,
     paddingHorizontal: 32,
     paddingVertical: 16,
   },
