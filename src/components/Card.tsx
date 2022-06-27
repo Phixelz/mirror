@@ -10,7 +10,7 @@ export function Card(props) {
       <Text style={styles.indicevar}>{props.indicevar}</Text>
 
       <View style={styles.divider}>{props.divider}</View>
-      
+
       <Text style={styles.open}>{props.open}</Text>
       <View style={styles.divider}>{props.divider}</View>
       <Text style={styles.up}>{props.up}</Text>
@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     borderColor: '#E7E7E7',
     borderWidth: 1,
-    borderRadius: 8,
+    borderRadius: 4,
   },
   indicetitle: {
     fontSize: 16,
