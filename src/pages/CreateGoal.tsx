@@ -20,7 +20,7 @@ export function CreateGoal() {
 
         <TextInput
           style={styles.input}
-          placeholder="Selecione"
+          placeholder="Nome da corretora"
           placeholderTextColor="#9E9E9E"
         />
 
