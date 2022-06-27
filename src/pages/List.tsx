@@ -30,14 +30,12 @@ export function List() {
             tickervar="Kinea Indices FDO INV IMOB - FII"
             details="Detalhes"
           />
-
           <Ticker
             tickertitle="VGIP11"
             tickervalue="R$ 99,04"
             tickervar="Valora Cri Indice FDO INV IMOB - FII"
             details="Detalhes"
           />
-
           <Ticker
             tickertitle="RECR11"
             tickervalue="R$ 100,38"
