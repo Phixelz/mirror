@@ -51,12 +51,7 @@ export function Home() {
           <Text style={{fontSize: 16, fontWeight: '400'}}>Meu Patrimônio</Text>
           <Text style={styles.title}>R$ 0,00</Text>
         </View>
-        <User
-          stroke="#404040"
-          fill="#fff"
-          width={32}
-          height={32}
-        />
+        <User stroke="#404040" fill="#fff" width={32} height={32} />
       </View>
 
       <View style={styles.welcome}>
@@ -77,7 +72,12 @@ export function Home() {
         </Text>
       </View>
 
-      <View style={{flexDirection: 'row', justifyContent: 'space-between', marginBottom: 8,}}>
+      <View
+        style={{
+          flexDirection: 'row',
+          justifyContent: 'space-between',
+          marginBottom: 8,
+        }}>
         <Text
           style={{
             fontSize: 16,
@@ -93,7 +93,7 @@ export function Home() {
           <Card
             indicetitle="IFIX"
             indicevalue="2.714,62"
-            indicevar="−1,05 (0,039%)"
+            indicevar="-1,05 (0,039%)"
             open="• Abertura 2.715,71"
             up="• Alta 2.720,15"
           />
@@ -101,7 +101,7 @@ export function Home() {
           <Card
             indicetitle="IBOV"
             indicevalue="115.310,91"
-            indicevar="−2.234,58 (1,98%)"
+            indicevar="-2.234,58 (1,98%)"
             open="• Abertura 113.076,33"
             up="• Alta 115.310,91"
           />
@@ -109,7 +109,7 @@ export function Home() {
           <Card
             indicetitle="S&P 500"
             indicevalue="4.463,12"
-            indicevar="−51,45 (1,17%)"
+            indicevar="-51,45 (1,17%)"
             open="• Abertura 4.465,40"
             up="• Alta 2.720,15"
           />

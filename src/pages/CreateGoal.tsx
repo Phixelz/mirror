@@ -7,12 +7,19 @@ import {
   ScrollView,
   TouchableOpacity,
 } from 'react-native';
-
+import {Home} from 'react-native-feather';
 export function CreateGoal() {
   return (
     <View style={styles.container}>
-      <View>
-        <Text style={styles.title}>Crie sua primeira carteira</Text>
+      <View
+        style={{
+          alignItems: 'center',
+          flexDirection: 'row',
+          justifyContent: 'space-between',
+          paddingHorizontal: 24,
+        }}>
+        <Text style={styles.title}>Criar carteira</Text>
+        <Home stroke="#404040" width={24} height={24} />
       </View>
 
       <ScrollView showsVerticalScrollIndicator={false}>
@@ -24,7 +31,7 @@ export function CreateGoal() {
           placeholderTextColor="#9E9E9E"
         />
 
-        <Text style={styles.label}>Tipo:</Text>
+        <Text style={styles.label}>Tipo</Text>
 
         <TextInput
           style={styles.input}
@@ -32,7 +39,7 @@ export function CreateGoal() {
           placeholderTextColor="#9E9E9E"
         />
 
-        <Text style={styles.label}>Ticker:</Text>
+        <Text style={styles.label}>Ticker</Text>
 
         <TextInput
           style={styles.input}
@@ -40,7 +47,7 @@ export function CreateGoal() {
           placeholderTextColor="#9E9E9E"
         />
 
-        <Text style={styles.label}>Quantidade:</Text>
+        <Text style={styles.label}>Quantidade</Text>
 
         <TextInput
           style={styles.input}
@@ -49,7 +56,7 @@ export function CreateGoal() {
           placeholderTextColor="#9E9E9E"
         />
 
-        <Text style={styles.label}>Valor investido:</Text>
+        <Text style={styles.label}>Valor investido</Text>
 
         <TextInput
           style={styles.input}
@@ -58,7 +65,7 @@ export function CreateGoal() {
           placeholderTextColor="#9E9E9E"
         />
 
-        <Text style={styles.label}>Período:</Text>
+        <Text style={styles.label}>Período</Text>
 
         <TextInput
           style={styles.input}
@@ -70,7 +77,7 @@ export function CreateGoal() {
       <View style={styles.footer}>
         <View>
           <Text style={{fontSize: 16, color: '#9F9F9F'}}>
-            Total em dividendos:
+            Total em dividendos
           </Text>
           <Text style={{fontSize: 22, fontWeight: '700', color: '#404040'}}>
             R$ 0,00
@@ -94,9 +101,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#FCFCFC',
   },
   title: {
-    paddingHorizontal: 24,
     paddingVertical: 24,
-    fontSize: 24,
+    fontSize: 22,
     fontWeight: '900',
     color: '#404040',
   },

@@ -75,6 +75,7 @@ export function List() {
           <Text style={styles.sectiontitle}>Fundos Imobiliários</Text>
           <ChevronRight stroke="#404040" fill="#fff" width={24} height={24} />
         </View>
+
         <View style={{marginBottom: 16}}>
           <Ticker
             tickertitle="KNIP11"
