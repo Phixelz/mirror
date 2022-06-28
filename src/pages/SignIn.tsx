@@ -57,8 +57,8 @@ export function SignIn() {
               color: '#404040',
               marginBottom: 24,
             }}>
-            Crie objetivos com seus FIIs favoritos e descubra o valor em
-            dividendos.
+            Crie objetivos com seus FIIs favoritos
+            e descubra o valor em dividendos.
           </Text>
 
           <TextInput

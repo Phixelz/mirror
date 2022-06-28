@@ -35,7 +35,7 @@ export function List() {
             fontWeight: '400',
             color: '#4E4E4E',
           }}>
-          Acesse a lista de fundos 
+          Acesse a lista de fundos
           imobiliários, acões, ETFs, BDRs e Debêntures.
         </Text>
       </View>
@@ -99,7 +99,6 @@ export function List() {
             manager="Kinea Indices FDO INV IMOB"
             viewdetails="Ver detalhes"
           />
-
           <Ticker
             tickertitle="VGIP11"
             tag="Papel"
@@ -107,7 +106,6 @@ export function List() {
             manager="Valora Cri Indice FDO INV IMOB"
             viewdetails="Ver detalhes"
           />
-
           <Ticker
             tickertitle="XPLG11"
             tag="Logística"
@@ -141,7 +139,6 @@ export function List() {
             manager="Taesa S.A."
             viewdetails="Ver detalhes"
           />
-
           <Ticker
             tickertitle="BBDC4"
             tag="Banco"
@@ -149,7 +146,6 @@ export function List() {
             manager="Banco Bradesco SA"
             viewdetails="Ver detalhes"
           />
-
           <Ticker
             tickertitle="BBSE3"
             tag="Seguros"
@@ -183,7 +179,6 @@ export function List() {
             manager="Apple"
             viewdetails="Ver detalhes"
           />
-
           <Ticker
             tickertitle="GOGL34"
             tag="BDRs"
@@ -217,7 +212,6 @@ export function List() {
             manager="Ishares Ibovespa Fundo de Indice"
             viewdetails="Ver detalhes"
           />
-
           <Ticker
             tickertitle="IVVB11"
             tag="EUA"

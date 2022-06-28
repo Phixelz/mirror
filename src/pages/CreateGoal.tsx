@@ -29,7 +29,6 @@ export function CreateGoal() {
       <ScrollView
         showsVerticalScrollIndicator={false}>
         <Text style={styles.label}>Corretora</Text>
-
         <TextInput
           style={styles.input}
           placeholder="Nome da corretora"
@@ -37,7 +36,6 @@ export function CreateGoal() {
         />
 
         <Text style={styles.label}>Tipo</Text>
-
         <TextInput
           style={styles.input}
           placeholder="Selecione"
@@ -45,7 +43,6 @@ export function CreateGoal() {
         />
 
         <Text style={styles.label}>Ticker</Text>
-
         <TextInput
           style={styles.input}
           placeholder="Ex: IRDM11"
@@ -53,7 +50,6 @@ export function CreateGoal() {
         />
 
         <Text style={styles.label}>Quantidade</Text>
-
         <TextInput
           style={styles.input}
           placeholder="Ex: 1000"
@@ -62,7 +58,6 @@ export function CreateGoal() {
         />
 
         <Text style={styles.label}>Valor investido</Text>
-
         <TextInput
           style={styles.input}
           placeholder="R$ 0,00"
@@ -71,7 +66,6 @@ export function CreateGoal() {
         />
 
         <Text style={styles.label}>Período</Text>
-
         <TextInput
           style={styles.input}
           placeholder="Ex: 12"
