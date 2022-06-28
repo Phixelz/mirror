@@ -6,6 +6,7 @@ import {
   ScrollView,
   TouchableOpacity,
 } from 'react-native';
+import {Sliders, User} from 'react-native-feather';
 import {Card} from '../components/Card';
 
 const Notification = props => {
@@ -23,10 +24,9 @@ const Notification = props => {
     return (
       <Text>
         {props.Welcome}
-        {props.Freemium}  
+        {props.Freemium}
       </Text>
     );
-    
   } else {
     return (
       <Text>
@@ -40,16 +40,30 @@ const Notification = props => {
 export function Home() {
   return (
     <View style={styles.container}>
-      <View>
-        <Text style={{fontSize: 16, fontWeight: '400'}}>Meu Patrimônio</Text>
-        <Text style={styles.title}>R$ 0,00</Text>
+      <View
+        style={{
+          flexDirection: 'row',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          marginBottom: 8,
+        }}>
+        <View>
+          <Text style={{fontSize: 16, fontWeight: '400'}}>Meu Patrimônio</Text>
+          <Text style={styles.title}>R$ 0,00</Text>
+        </View>
+        <User
+          stroke="#404040"
+          fill="#fff"
+          width={32}
+          height={32}
+        />
       </View>
 
       <View style={styles.welcome}>
         <Text
           style={{
             marginBottom: 4,
-            fontSize: 18,
+            fontSize: 16,
             color: '#404040',
             fontWeight: '700',
           }}>
@@ -60,6 +74,17 @@ export function Home() {
         <Text style={{fontSize: 15, fontWeight: '400', color: '#909090'}}>
           <Notification Freemium="Você está utilizando a versão freemium (Limitada) do app." />
           <Notification Premium="Seja Premium e assine a versão completa do Mirror Analytic" />
+        </Text>
+      </View>
+
+      <View style={{flexDirection: 'row', justifyContent: 'space-between', marginBottom: 8,}}>
+        <Text
+          style={{
+            fontSize: 16,
+            fontWeight: '700',
+            color: '#404040',
+          }}>
+          Índices
         </Text>
       </View>
 
@@ -95,7 +120,7 @@ export function Home() {
         <Text
           style={{
             marginBottom: 8,
-            fontSize: 18,
+            fontSize: 16,
             fontWeight: '700',
             color: '#404040',
           }}>
@@ -110,7 +135,7 @@ export function Home() {
         <Text
           style={{
             marginBottom: 16,
-            fontSize: 20,
+            fontSize: 18,
             fontWeight: '700',
             color: '#404040',
           }}>
@@ -118,7 +143,7 @@ export function Home() {
         </Text>
         <TouchableOpacity activeOpacity={0.9}>
           <View style={styles.createbutton}>
-            <Text style={{fontSize: 15, fontWeight: '600', color: '#FFF'}}>
+            <Text style={{fontSize: 14, fontWeight: '600', color: '#FFF'}}>
               Criar carteira
             </Text>
           </View>
@@ -136,10 +161,9 @@ const styles = StyleSheet.create({
     backgroundColor: '#FEFEFE',
   },
   title: {
-    fontSize: 24,
+    fontSize: 22,
     fontWeight: '900',
     color: '#404040',
-    marginBottom: 8,
   },
   welcome: {
     backgroundColor: '#FFF',
@@ -164,6 +188,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderRadius: 4,
     paddingVertical: 16,
+    paddingHorizontal: 16,
   },
   input: {
     backgroundColor: '#F2F2F2',

@@ -21,8 +21,8 @@ export function SignIn() {
       <View style={styles.wrapper}>
         <Image
           style={{
-            width: 180,
-            height: 180,
+            width: 160,
+            height: 160,
             alignSelf: 'center',
             marginBottom: 24,
           }}
@@ -31,13 +31,19 @@ export function SignIn() {
         />
 
         <View>
-          <Text style={{marginBottom: 8, fontSize: 22, fontWeight: '700', color: '#404040'}}>
+          <Text
+            style={{
+              marginBottom: 8,
+              fontSize: 20,
+              fontWeight: '700',
+              color: '#404040',
+            }}>
             Descubra quanto você{' '}
-            <Text style={{fontWeight: '400',}}>vai receber em dividendos.</Text>
+            <Text style={{fontWeight: '400'}}>vai receber em dividendos.</Text>
           </Text>
           <Text
             style={{
-              fontSize: 16,
+              fontSize: 15,
               fontWeight: '400',
               color: '#404040',
               marginBottom: 24,
@@ -100,7 +106,7 @@ const styles = StyleSheet.create({
     color: '#404040',
   },
   wrapper: {
-    marginVertical: '10%',
+    marginVertical: '15%',
   },
   input: {
     backgroundColor: '#F2F2F2',
@@ -110,7 +116,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
   },
   textbutton: {
-    fontSize: 15,
+    fontSize: 14,
     fontWeight: '700',
     color: '#FFF',
   },
@@ -119,14 +125,14 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   emailforgot: {
+    fontSize: 14,
     alignSelf: 'flex-end',
-    fontSize: 15,
     fontWeight: '400',
     color: '#404040',
     marginBottom: 8,
   },
   newaccount: {
-    fontSize: 16,
+    fontSize: 15,
     fontWeight: '400',
     color: '#7A7A7A',
     marginVertical: 16,

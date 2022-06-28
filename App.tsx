@@ -5,7 +5,7 @@ import { List } from "./src/pages/List";
 import { CreateGoal } from "./src/pages/CreateGoal";
 
 export function App() {
-  return <List/>
+  return <SignIn/>
 }
 
 export default App;
