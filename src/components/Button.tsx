@@ -1,11 +1,13 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 
 export function Button(props) {
   return (
     <View style={styles.button}>
       {props.button}
-      <Text style={styles.textbutton}>{props.textbutton}</Text>
+      <Text style={styles.textbutton}>
+        {props.textbutton}
+      </Text>
     </View>
   );
 }

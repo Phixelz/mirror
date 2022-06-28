@@ -21,20 +21,16 @@ export function Ticker(props) {
           <Text style={styles.tickertitle}>
             {props.tickertitle}
           </Text>
-
           <Text style={styles.tag}>
             {props.tag}
           </Text>
         </View>
-
         <Text style={styles.tickervalue}>
           {props.tickervalue}
         </Text>
-
         <Text style={styles.manager}>
           {props.manager}
         </Text>
-
         <View
           style={{
             flexDirection: 'row',
@@ -50,7 +46,6 @@ export function Ticker(props) {
             height={16}
           />
         </View>
-
       </View>
     </TouchableOpacity>
   );

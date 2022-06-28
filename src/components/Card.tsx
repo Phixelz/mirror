@@ -1,19 +1,31 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 
 export function Card(props) {
   return (
     <View style={styles.card}>
       {props.indice}
-      <Text style={styles.indicetitle}>{props.indicetitle}</Text>
-      <Text style={styles.indicevalue}>{props.indicevalue}</Text>
-      <Text style={styles.indicevar}>{props.indicevar}</Text>
-
-      <View style={styles.divider}>{props.divider}</View>
-
-      <Text style={styles.open}>{props.open}</Text>
-      <View style={styles.divider}>{props.divider}</View>
-      <Text style={styles.up}>{props.up}</Text>
+      <Text style={styles.indicetitle}>
+        {props.indicetitle}
+      </Text>
+      <Text style={styles.indicevalue}>
+        {props.indicevalue}
+      </Text>
+      <Text style={styles.indicevar}>
+        {props.indicevar}
+      </Text>
+      <View style={styles.divider}>
+        {props.divider}
+      </View>
+      <Text style={styles.open}>
+        {props.open}
+      </Text>
+      <View style={styles.divider}>
+        {props.divider}
+      </View>
+      <Text style={styles.up}>
+        {props.up}
+      </Text>
     </View>
   );
 }
