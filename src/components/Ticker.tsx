@@ -1,5 +1,10 @@
 import React from 'react';
-import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
+import {
+  View,
+  Text,
+  StyleSheet,
+  TouchableOpacity
+} from 'react-native';
 import { ChevronRight } from 'react-native-feather';
 
 export function Ticker(props) {
@@ -13,25 +18,39 @@ export function Ticker(props) {
             flexDirection: 'row',
             justifyContent: 'space-between',
           }}>
-          <Text style={styles.tickertitle}>{props.tickertitle}</Text>
-          <Text style={styles.tag}>{props.tag}</Text>
+          <Text style={styles.tickertitle}>
+            {props.tickertitle}
+          </Text>
+
+          <Text style={styles.tag}>
+            {props.tag}
+          </Text>
         </View>
-        <Text style={styles.tickervalue}>{props.tickervalue}</Text>
-        <Text style={styles.tickervar}>{props.tickervar}</Text>
+
+        <Text style={styles.tickervalue}>
+          {props.tickervalue}
+        </Text>
+
+        <Text style={styles.manager}>
+          {props.manager}
+        </Text>
+
         <View
-        style={{
-          flexDirection: 'row',
-          alignItems: 'flex-end',
-        }}>
-        <Text style={styles.viewmore}>{props.viewmore}</Text>
-        <ChevronRight
-        style={styles.icon}
-        stroke="#404040"
-        fill="#fff"
-        width={16}
-        height={16}
-      />
-      </View>
+          style={{
+            flexDirection: 'row',
+            alignItems: 'flex-end',
+          }}>
+          <Text style=
+            {styles.viewdetails}>
+            {props.viewdetails}
+          </Text>
+          <ChevronRight
+            color="#404040"
+            width={16}
+            height={16}
+          />
+        </View>
+
       </View>
     </TouchableOpacity>
   );
@@ -42,7 +61,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFF',
     paddingVertical: 16,
     paddingHorizontal: 16,
-    borderColor: '#E7E7E7',
+    borderColor: '#F2F2F2',
     borderWidth: 1,
     borderRadius: 4,
     marginBottom: 12,
@@ -51,11 +70,10 @@ const styles = StyleSheet.create({
     flex: 1,
     fontSize: 14,
     color: '#404040',
-    fontWeight: '300',
+    fontWeight: '400',
   },
   tag: {
-    backgroundColor: 'rgba(208, 208, 208, 0.1)',
-    borderColor: '#E7E7E7',
+    borderColor: '#F2F2F2',
     borderWidth: 1,
     fontSize: 14,
     color: 'rgba(40, 40, 40, 0.7)',
@@ -65,23 +83,20 @@ const styles = StyleSheet.create({
     paddingVertical: 2,
   },
   tickervalue: {
-    fontSize: 16,
+    fontSize: 18,
     color: '#4E4E4E',
     fontWeight: '700',
   },
-  tickervar: {
-    fontSize: 14,
-    color: '#B4B4B4',
+  manager: {
+    fontSize: 15,
+    color: '#A1A1A1',
     fontWeight: '400',
     marginBottom: 12,
   },
-  viewmore: {
-    alignSelf: 'flex-start',
-    fontSize: 14,
+  viewdetails: {
+    fontSize: 15,
     color: '#4E4E4E',
     fontWeight: '500',
+    marginRight: 4,
   },
-  icon: {
-    marginHorizontal: 4,
-  }
 });
