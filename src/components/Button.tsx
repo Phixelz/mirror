@@ -16,12 +16,12 @@ const styles = StyleSheet.create({
   button: {
     backgroundColor: '#404040',
     alignItems: 'center',
-    borderRadius: 4,
     paddingVertical: 16,
+    borderRadius: 4,
   },
   textbutton: {
     color: '#FFF',
-    fontWeight: '600',
     fontSize: 14,
+    fontWeight: '600',
   },
 });
