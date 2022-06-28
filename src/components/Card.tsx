@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
   indicetitle: {
     fontSize: 16,
     fontWeight: '300',
-    color: '#404040', 
+    color: '#404040',
   },
   indicevalue: {
     fontSize: 24,
