@@ -56,16 +56,16 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFF',
     paddingVertical: 16,
     paddingHorizontal: 16,
-    borderColor: '#F2F2F2',
     borderWidth: 1,
+    borderColor: '#F2F2F2',
     borderRadius: 4,
     marginBottom: 12,
   },
   tickertitle: {
     flex: 1,
     fontSize: 14,
-    color: '#404040',
     fontWeight: '400',
+    color: '#404040',
   },
   tag: {
     borderColor: '#F2F2F2',
@@ -84,14 +84,14 @@ const styles = StyleSheet.create({
   },
   manager: {
     fontSize: 15,
-    color: '#A1A1A1',
     fontWeight: '400',
+    color: '#A1A1A1',
     marginBottom: 12,
   },
   viewdetails: {
     fontSize: 15,
-    color: '#4E4E4E',
     fontWeight: '500',
+    color: '#4E4E4E',
     marginRight: 4,
   },
 });

@@ -32,30 +32,30 @@ export function Card(props) {
 
 const styles = StyleSheet.create({
   card: {
-    backgroundColor: '#FFF',
     width: 320,
+    backgroundColor: '#FFF',
+    borderColor: '#E7E7E7',
+    borderWidth: 1,
+    borderRadius: 4,
     marginLeft: 0,
     marginHorizontal: 16,
     paddingVertical: 16,
     paddingHorizontal: 16,
-    borderColor: '#E7E7E7',
-    borderWidth: 1,
-    borderRadius: 4,
   },
   indicetitle: {
     fontSize: 16,
-    color: '#404040',
     fontWeight: '300',
+    color: '#404040', 
   },
   indicevalue: {
     fontSize: 24,
-    color: '#404040',
     fontWeight: '700',
+    color: '#404040',
   },
   indicevar: {
     fontSize: 15,
-    color: '#C25B5B',
     fontWeight: '500',
+    color: '#C25B5B',
   },
   divider: {
     marginVertical: 16,
@@ -64,12 +64,12 @@ const styles = StyleSheet.create({
   },
   open: {
     fontSize: 14,
-    color: '#404040',
     fontWeight: '500',
+    color: '#404040',
   },
   up: {
     fontSize: 14,
-    color: '#4DB878',
     fontWeight: '500',
+    color: '#4DB878',
   },
 });
