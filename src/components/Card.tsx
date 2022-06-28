@@ -36,12 +36,12 @@ const styles = StyleSheet.create({
     fontWeight: '300',
   },
   indicevalue: {
-    fontSize: 28,
+    fontSize: 24,
     color: '#404040',
     fontWeight: '700',
   },
   indicevar: {
-    fontSize: 16,
+    fontSize: 15,
     color: '#C25B5B',
     fontWeight: '500',
   },
