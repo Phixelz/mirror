@@ -8,6 +8,7 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import { Home } from 'react-native-feather';
+import { Button } from '../components/Button';
 export function CreateGoal() {
   return (
     <View style={styles.container}>
@@ -18,7 +19,9 @@ export function CreateGoal() {
           justifyContent: 'space-between',
           paddingHorizontal: 24,
         }}>
-        <Text style={styles.title}>Criar carteira</Text>
+        <Text style={styles.title}>
+          Criar carteira
+        </Text>
         <Home
           color="#404040"
           width={28}
@@ -28,44 +31,51 @@ export function CreateGoal() {
 
       <ScrollView
         showsVerticalScrollIndicator={false}>
-        <Text style={styles.label}>Corretora</Text>
+        <Text style={styles.label}>
+          Corretora
+        </Text>
         <TextInput
           style={styles.input}
           placeholder="Nome da corretora"
           placeholderTextColor="#9E9E9E"
         />
-
-        <Text style={styles.label}>Tipo</Text>
+        <Text style={styles.label}>
+          Tipo
+        </Text>
         <TextInput
           style={styles.input}
           placeholder="Selecione"
           placeholderTextColor="#9E9E9E"
         />
-
-        <Text style={styles.label}>Ticker</Text>
+        <Text style={styles.label}>
+          Ticker
+        </Text>
         <TextInput
           style={styles.input}
           placeholder="Ex: IRDM11"
           placeholderTextColor="#9E9E9E"
         />
-
-        <Text style={styles.label}>Quantidade</Text>
+        <Text style={styles.label}>
+          Quantidade
+        </Text>
         <TextInput
           style={styles.input}
           placeholder="Ex: 1000"
           keyboardType="numeric"
           placeholderTextColor="#9E9E9E"
         />
-
-        <Text style={styles.label}>Valor investido</Text>
+        <Text style={styles.label}>
+          Valor investido
+        </Text>
         <TextInput
           style={styles.input}
           placeholder="R$ 0,00"
           keyboardType="numeric"
           placeholderTextColor="#9E9E9E"
         />
-
-        <Text style={styles.label}>Período</Text>
+        <Text style={styles.label}>
+          Período
+        </Text>
         <TextInput
           style={styles.input}
           placeholder="Ex: 12"
@@ -75,7 +85,10 @@ export function CreateGoal() {
       </ScrollView>
 
       <View style={styles.footer}>
-        <View>
+        <View style={{
+          marginHorizontal: 32,
+          marginLeft: 0,
+        }}>
           <Text style={{
             fontSize: 16,
             color: '#9F9F9F'
@@ -91,17 +104,13 @@ export function CreateGoal() {
           </Text>
         </View>
 
-        <TouchableOpacity activeOpacity={0.9}>
-          <View style={styles.createbutton}>
-            <Text style={{
-              fontSize: 15,
-              fontWeight: '600',
-              color: '#FFF'
-            }}>
-              Criar carteira
-            </Text>
-          </View>
-        </TouchableOpacity>
+        <View style={{ flex: 1 }}>
+          <TouchableOpacity
+            activeOpacity={0.9}>
+            <Button textbutton="Criar carteira"
+            />
+          </TouchableOpacity>
+        </View>
       </View>
     </View>
   );
