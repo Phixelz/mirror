@@ -7,7 +7,7 @@ import {
   ScrollView,
   TouchableOpacity,
 } from 'react-native';
-import {Home} from 'react-native-feather';
+import { Home } from 'react-native-feather';
 export function CreateGoal() {
   return (
     <View style={styles.container}>
@@ -19,11 +19,16 @@ export function CreateGoal() {
           paddingHorizontal: 24,
         }}>
         <Text style={styles.title}>Criar carteira</Text>
-        <Home stroke="#404040" width={24} height={24} />
+        <Home
+          color="#404040"
+          width={28}
+          height={28}
+        />
       </View>
 
-      <ScrollView showsVerticalScrollIndicator={false}>
-        <Text style={styles.label}>Corretora:</Text>
+      <ScrollView
+        showsVerticalScrollIndicator={false}>
+        <Text style={styles.label}>Corretora</Text>
 
         <TextInput
           style={styles.input}
@@ -74,18 +79,31 @@ export function CreateGoal() {
           placeholderTextColor="#9E9E9E"
         />
       </ScrollView>
+
       <View style={styles.footer}>
         <View>
-          <Text style={{fontSize: 16, color: '#9F9F9F'}}>
+          <Text style={{
+            fontSize: 16,
+            color: '#9F9F9F'
+          }}>
             Total em dividendos
           </Text>
-          <Text style={{fontSize: 22, fontWeight: '700', color: '#404040'}}>
+          <Text style={{
+            fontSize: 22,
+            fontWeight: '700',
+            color: '#404040'
+          }}>
             R$ 0,00
           </Text>
         </View>
+
         <TouchableOpacity activeOpacity={0.9}>
           <View style={styles.createbutton}>
-            <Text style={{fontSize: 15, fontWeight: '600', color: '#FFF'}}>
+            <Text style={{
+              fontSize: 15,
+              fontWeight: '600',
+              color: '#FFF'
+            }}>
               Criar carteira
             </Text>
           </View>
@@ -102,7 +120,7 @@ const styles = StyleSheet.create({
   },
   title: {
     paddingVertical: 24,
-    fontSize: 22,
+    fontSize: 24,
     fontWeight: '900',
     color: '#404040',
   },

@@ -7,14 +7,18 @@ import {
   Image,
   TextInput,
 } from 'react-native';
-
+import { Button } from '../components/Button';
 export function SignIn() {
   return (
     <View style={styles.container}>
       <View>
         <Text style={styles.title}>
           Mirror
-          <Text style={{fontWeight: '400'}}>Analytic</Text>
+          <Text style={{
+            fontWeight: '400'
+          }}>
+            Analytic
+          </Text>
         </Text>
       </View>
 
@@ -39,8 +43,13 @@ export function SignIn() {
               color: '#404040',
             }}>
             Descubra quanto você{' '}
-            <Text style={{fontWeight: '400'}}>vai receber em dividendos.</Text>
+            <Text style={{
+              fontWeight: '400'
+            }}>
+              vai receber em dividendos.
+            </Text>
           </Text>
+
           <Text
             style={{
               fontSize: 15,
@@ -57,8 +66,11 @@ export function SignIn() {
             placeholder="Digite seu e-mail"
             placeholderTextColor="#949494"
           />
-          <TouchableOpacity activeOpacity={0.8}>
-            <Text style={styles.emailforgot}>Esqueceu sua senha?</Text>
+          <TouchableOpacity
+            activeOpacity={0.9}>
+            <Text style={styles.emailforgot}>
+              Esqueceu sua senha?
+            </Text>
           </TouchableOpacity>
 
           <TextInput
@@ -68,19 +80,26 @@ export function SignIn() {
             placeholderTextColor="#949494"
           />
 
-          <TouchableOpacity activeOpacity={0.8}>
-            <View style={styles.enterbutton}>
-              <Text style={styles.textbutton}>Entrar</Text>
-            </View>
+          <TouchableOpacity
+            activeOpacity={0.9}>
+            <Button textbutton="Entrar"
+            />
           </TouchableOpacity>
 
-          <TouchableOpacity activeOpacity={0.8}>
+          <TouchableOpacity
+            activeOpacity={0.9}>
             <View style={styles.content}>
-              <Text style={styles.newaccount}>Não tem uma conta?</Text>
+              <Text style={styles.newaccount}>
+                Não tem uma conta?
+              </Text>
               <Text
                 style={[
                   styles.newaccount,
-                  {fontSize: 16, fontWeight: '600', color: '#404040'},
+                  {
+                    fontSize: 16,
+                    fontWeight: '600',
+                    color: '#404040'
+                  },
                 ]}>
                 {' '}
                 Criar conta
@@ -136,12 +155,5 @@ const styles = StyleSheet.create({
     fontWeight: '400',
     color: '#7A7A7A',
     marginVertical: 16,
-  },
-  enterbutton: {
-    alignItems: 'center',
-    backgroundColor: '#404040',
-    borderRadius: 4,
-    paddingHorizontal: 32,
-    paddingVertical: 16,
   },
 });

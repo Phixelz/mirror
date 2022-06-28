@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   View,
   Text,
@@ -6,8 +6,9 @@ import {
   ScrollView,
   TouchableOpacity,
 } from 'react-native';
-import {Sliders, User} from 'react-native-feather';
-import {Card} from '../components/Card';
+import { EyeOff } from 'react-native-feather';
+import { Card } from '../components/Card';
+import { Button } from '../components/Button';
 
 const Notification = props => {
   const [isShowingText, setIsShowingText] = useState(true);
@@ -48,10 +49,19 @@ export function Home() {
           marginBottom: 8,
         }}>
         <View>
-          <Text style={{fontSize: 16, fontWeight: '400'}}>Meu Patrimônio</Text>
+          <Text style={{
+            fontSize: 16,
+            fontWeight: '400'
+          }}>
+            Meu Patrimônio
+          </Text>
           <Text style={styles.title}>R$ 0,00</Text>
         </View>
-        <User stroke="#404040" fill="#fff" width={32} height={32} />
+        <EyeOff
+          color="#404040"
+          width={28}
+          height={28}
+        />
       </View>
 
       <View style={styles.welcome}>
@@ -62,13 +72,25 @@ export function Home() {
             color: '#404040',
             fontWeight: '700',
           }}>
-          <Notification Welcome="Seja bem-vindo, Investor!" />
-          <Notification Subscribe="Assine o Mirror Premium!" />
+          <Notification
+            Welcome="Seja bem-vindo, Investor!"
+          />
+          <Notification
+            Subscribe="Assine o Mirror Premium!"
+          />
         </Text>
 
-        <Text style={{fontSize: 15, fontWeight: '400', color: '#909090'}}>
-          <Notification Freemium="Você está utilizando a versão freemium (Limitada) do app." />
-          <Notification Premium="Seja Premium e assine a versão completa do Mirror Analytic" />
+        <Text style={{
+          fontSize: 15,
+          fontWeight: '400',
+          color: '#909090'
+        }}>
+          <Notification
+            Freemium="Você está utilizando a versão freemium (Limitada) do app."
+          />
+          <Notification
+            Premium="Seja Premium e assine a versão completa do Mirror Analytic"
+          />
         </Text>
       </View>
 
@@ -88,8 +110,13 @@ export function Home() {
         </Text>
       </View>
 
-      <View style={{flexDirection: 'row', marginBottom: 24}}>
-        <ScrollView showsHorizontalScrollIndicator={false} horizontal={true}>
+      <View style={{
+        flexDirection: 'row',
+        marginBottom: 24
+      }}>
+        <ScrollView
+          showsHorizontalScrollIndicator={false}
+          horizontal={true}>
           <Card
             indicetitle="IFIX"
             indicevalue="2.714,62"
@@ -97,7 +124,6 @@ export function Home() {
             open="• Abertura 2.715,71"
             up="• Alta 2.720,15"
           />
-
           <Card
             indicetitle="IBOV"
             indicevalue="115.310,91"
@@ -105,7 +131,6 @@ export function Home() {
             open="• Abertura 113.076,33"
             up="• Alta 115.310,91"
           />
-
           <Card
             indicetitle="S&P 500"
             indicevalue="4.463,12"
@@ -129,9 +154,13 @@ export function Home() {
       </View>
 
       <View style={styles.walletcreate}>
-        <Text style={{fontSize: 15, color: '#909090'}}>
+        <Text style={{
+          fontSize: 15,
+          color: '#909090'
+        }}>
           Você ainda não possui nenhuma carteira
         </Text>
+
         <Text
           style={{
             marginBottom: 16,
@@ -141,13 +170,11 @@ export function Home() {
           }}>
           Crie sua primeira carteira
         </Text>
+
         <TouchableOpacity activeOpacity={0.9}>
-          <View style={styles.createbutton}>
-            <Text style={{fontSize: 14, fontWeight: '600', color: '#FFF'}}>
-              Criar carteira
-            </Text>
-          </View>
+          <Button textbutton="Criar carteira" />
         </TouchableOpacity>
+
       </View>
     </View>
   );
@@ -182,13 +209,6 @@ const styles = StyleSheet.create({
     borderColor: '#E7E7E7',
     borderWidth: 1,
     borderRadius: 4,
-  },
-  createbutton: {
-    backgroundColor: '#404040',
-    alignItems: 'center',
-    borderRadius: 4,
-    paddingVertical: 16,
-    paddingHorizontal: 16,
   },
   input: {
     backgroundColor: '#F2F2F2',
