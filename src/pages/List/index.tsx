@@ -111,20 +111,22 @@ export function List() {
     <Container>
       <Header>
         <Info
-          title="Lista de Ativos"
-          subtitle="Acesse a lista de fundos imobiliários, ações, ETFS, BDRs e Debêntures."
+          type='default'
+          title='Lista de Ativos'
+          subtitle='Fundos imobiliários, ações, ETFS, BDRs e Debêntures.'
         />
 
         <SearchView>
           <TextInput
-            placeholder="Pesquisar"
-            placeholderTextColor="#949494"
+            placeholder='Pesquisar'
+            placeholderTextColor='#949494'
           />
 
           <Button
-            type="default"
-            title="Filtrar"
+            type='default'
+            title='Filtrar'
           />
+
         </SearchView>
       </Header>
 

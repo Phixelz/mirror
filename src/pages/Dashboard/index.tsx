@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  IndiceCards,
+  Cards,
   Container,
   Header,
   BaseTitle,
@@ -32,36 +32,36 @@ export function Dashboard() {
       </Header>
 
       <Info
-        type="notification"
-        title="Seja bem-vindo, Investor!"
-        subtitle="Você está utilizando a versão freemium (Limitada) do app."
+        type='notification'
+        title='Seja bem-vindo, Investor!'
+        subtitle='Você está utilizando a versão freemium (Limitada) do app.'
       />
 
-      <IndiceCards>
+      <Cards>
         <Card
-          indicetitle="IFIX"
-          indicevalue="2.714,62"
-          indicevar="-1,05 (0,039%)"
-          open="• Abertura 113.076,33"
-          up="• Alta 115.310,91"
+          indicetitle='IFIX'
+          indicevalue='2.714,62'
+          indicevar='-1,05 (0,039%)'
+          open='• Abertura 113.076,33'
+          up='• Alta 115.310,91'
         />
 
         <Card
-          indicetitle="IBOV"
-          indicevalue="115.310,91"
-          indicevar="-2.234,58 (1,98%)"
-          open="• Abertura 2.715,71"
-          up="• Alta 2.720,15"
+          indicetitle='IBOV'
+          indicevalue='115.310,91'
+          indicevar='-2.234,58 (1,98%)'
+          open='• Abertura 2.715,71'
+          up='• Alta 2.720,15'
         />
 
         <Card
-          indicetitle="S&P 500"
-          indicevalue="4.463,12"
-          indicevar="-51,45 (1,17%)"
-          open="• Abertura 4.465,40"
-          up="• Alta 2.720,15"
+          indicetitle='S&P 500'
+          indicevalue='4.463,12'
+          indicevar='-51,45 (1,17%)'
+          open='• Abertura 4.465,40'
+          up='• Alta 2.720,15'
         />
-      </IndiceCards>
+      </Cards>
 
       <Subtitle>
         Minhas Carteiras
@@ -77,8 +77,8 @@ export function Dashboard() {
         </WrapperTitle>
 
         <Button
-          type="default"
-          title="Criar carteira"
+          type='default'
+          title='Criar carteira'
         />
 
       </Wrapper>

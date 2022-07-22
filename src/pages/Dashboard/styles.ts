@@ -1,8 +1,8 @@
+import styled from 'styled-components/native';
 import {EyeOff} from 'react-native-feather';
 import {RFValue} from 'react-native-responsive-fontsize';
-import styled from 'styled-components/native';
 
-export const IndiceCards = styled.ScrollView.attrs({
+export const Cards = styled.ScrollView.attrs({
   showsHorizontalScrollIndicator: false,
   horizontal: true,
 })`

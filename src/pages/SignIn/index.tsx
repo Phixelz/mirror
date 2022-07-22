@@ -22,8 +22,8 @@ export function SignIn() {
 
       <Wrapper>
         <Illustration
-          resizeMode="contain"
-          source={require("../../assets/illustration.png")}
+          resizeMode='contain'
+          source={require('../../assets/illustration.png')}
         />
 
         <DescriptionStyle>
@@ -34,24 +34,24 @@ export function SignIn() {
         </DescriptionStyle>
 
         <TextInput
-          placeholder="Digite seu e-mail"
-          placeholderTextColor="#949494"
+          placeholder='Digite seu e-mail'
+          placeholderTextColor='#949494'
         />
 
         <Button
-          type="link"
-          title="Esqueceu sua senha?"
+          type='link'
+          title='Esqueceu sua senha?'
         />
 
         <TextInput
           secureTextEntry
-          placeholder="Digite sua senha"
-          placeholderTextColor="#949494"
+          placeholder='Digite sua senha'
+          placeholderTextColor='#949494'
         />
 
         <Button
-          type="default"
-          title="Entrar"
+          type='default'
+          title='Entrar'
         />
 
       </Wrapper>

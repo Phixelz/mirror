@@ -26,6 +26,11 @@ export const Title = styled.Text`
   color: ${({ theme }) => theme.colors.primary_dark};
 `;
 
+export const Wrapper = styled.ScrollView.attrs({
+  showsVerticalIndicatorScroll: false,
+})`
+`;
+
 export const Label = styled.Text`
   font-size: 15px;
   font-weight: 500;
@@ -60,4 +65,7 @@ export const FooterSubtitle = styled.Text`
   font-size: 22px;
   font-weight: 900;
   color: ${({ theme }) => theme.colors.primary};
+`;
+
+export const TextView = styled.View`
 `;
