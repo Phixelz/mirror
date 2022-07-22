@@ -1,13 +1,21 @@
-import styled from 'styled-components/native';
+import styled, {css} from 'styled-components/native';
 import {RFValue} from 'react-native-responsive-fontsize';
 
-export const Container = styled.View`
+interface Props {
+  type: "default" | "notification";
+}
+
+export const Container = styled.View<Props>`
   background-color: ${({ theme }) => theme.colors.secondary_light};
   margin-bottom: 24px;
   padding: 24px;
   border-radius: 4px;
   border-width: 1px;
   border-color: ${({ theme }) => theme.colors.primary_light};
+
+  ${(props) => props.type === 'notification' && css`
+  background-color: ${({ theme }) => theme.colors.white};
+ `}
 `;
 
 export const Title = styled.Text`
