@@ -2,7 +2,7 @@ import styled, {css} from 'styled-components/native';
 import {RFValue} from 'react-native-responsive-fontsize';
 
 interface Props {
-  type: "default" | "notification";
+  type: 'default' | 'notification';
 }
 
 export const Container = styled.View<Props>`

@@ -1,7 +1,7 @@
 import styled, {css} from "styled-components/native";
 
 interface Props {
-  type: "default" | "link";
+  type: 'default' | 'link';
 }
 
 export const CustomButton = styled.TouchableOpacity.attrs({

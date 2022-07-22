@@ -17,10 +17,9 @@ interface Props {
   indicevar: string;
   open: string;
   up: string;
-  icon: string;
 }
 
-export function IndiceCard({
+export function Card({
   indicetitle,
   indicevalue,
   indicevar,

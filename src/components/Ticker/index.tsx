@@ -7,12 +7,11 @@ import {
   TickerTitle,
   TickerValue,
   Manager,
-  Divider,
   Footer,
 } from './styles';
 
 interface Props {
-  type: "up" | "down";
+  type: 'up' | 'down';
   tickertitle: string;
   tagname: string;
   tickervalue: string;
@@ -30,15 +29,12 @@ export function Ticker({
     <Container>
       <Header>
         <TickerTitle>{tickertitle}</TickerTitle>
-
         <Tag>
           <TagName>{tagname}</TagName>
         </Tag>
       </Header>
 
       <Manager>{manager}</Manager>
-
-      <Divider />
 
       <Footer>
         <TickerValue type={type}>{tickervalue}</TickerValue>

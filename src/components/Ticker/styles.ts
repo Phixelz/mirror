@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components/native';
 import { RFValue } from 'react-native-responsive-fontsize';
 
 interface Props {
-  type: "up" | "down";
+  type: 'up' | 'down';
 }
 
 export const Container = styled.TouchableOpacity.attrs({
@@ -12,7 +12,7 @@ export const Container = styled.TouchableOpacity.attrs({
   border-color: ${({ theme }) => theme.colors.primary_light};
   border-width: 1px;
   border-radius: 4px;
-  padding: 16px;
+  padding: 24px 16px;
   margin: 0 0 12px 0;
 `;
 
@@ -41,9 +41,10 @@ export const TickerTitle = styled.Text`
 `;
 
 export const TickerValue = styled.Text<Props>`
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 600;
   color: ${({ theme }) => theme.colors.primary};
+  line-height: 32px;
 
   ${(props) => props.type === 'up' && css`
   color: ${({ theme }) => theme.colors.success};
@@ -58,12 +59,7 @@ export const Manager = styled.Text`
   font-size: 16px;
   font-weight: 400;
   color: ${({ theme }) => theme.colors.secondary};
-`;
-
-export const Divider = styled.View`
-  margin: 12px 0;
-  border-bottom-width: 1px;
-  border-color: ${({ theme }) => theme.colors.primary_light};
+  line-height: 24px;
 `;
 
 export const Footer = styled.Text`

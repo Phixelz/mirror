@@ -6,7 +6,7 @@ import {
 } from './styles';
 
 interface Props {
-  type: "default" | "notification";
+  type: 'default' | 'notification';
   title: string;
   subtitle: string;
 }
