@@ -1,0 +1,70 @@
+import styled, { css } from 'styled-components/native';
+import { RFValue } from 'react-native-responsive-fontsize';
+
+interface Props {
+  type: "up" | "down";
+}
+
+export const Container = styled.TouchableOpacity.attrs({
+  activeOpacity: 0.8,
+})`
+  background-color: ${({ theme }) => theme.colors.white};
+  border-color: ${({ theme }) => theme.colors.primary_light};
+  border-width: 1px;
+  border-radius: 4px;
+  padding: 16px;
+  margin: 0 0 12px 0;
+`;
+
+export const Header = styled.View`
+  justify-content: space-between;
+  flex-direction: row;
+`;
+
+export const Tag = styled.View`
+  border-width: 1px;
+  border-color: ${({ theme }) => theme.colors.primary_light};
+  border-radius: 4px;
+  padding: 0 12px;
+`;
+
+export const TagName = styled.Text`
+  font-size: ${RFValue(13)}px;
+  font-weight: 400;
+  color: ${({ theme }) => theme.colors.primary};
+`;
+
+export const TickerTitle = styled.Text`
+  font-size: 16px;
+  font-weight: 700;
+  color: ${({ theme }) => theme.colors.primary};
+`;
+
+export const TickerValue = styled.Text<Props>`
+  font-size: 16px;
+  font-weight: 600;
+  color: ${({ theme }) => theme.colors.primary};
+
+  ${(props) => props.type === 'up' && css`
+  color: ${({ theme }) => theme.colors.success};
+ `}
+
+ ${(props) => props.type === 'down' && css`
+  color: ${({ theme }) => theme.colors.warning};
+ `}
+`;
+
+export const Manager = styled.Text`
+  font-size: 16px;
+  font-weight: 400;
+  color: ${({ theme }) => theme.colors.secondary};
+`;
+
+export const Divider = styled.View`
+  margin: 12px 0;
+  border-bottom-width: 1px;
+  border-color: ${({ theme }) => theme.colors.primary_light};
+`;
+
+export const Footer = styled.Text`
+`;
