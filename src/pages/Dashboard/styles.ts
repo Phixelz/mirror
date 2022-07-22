@@ -48,28 +48,6 @@ export const Subtitle = styled.Text`
   color: #404040;
 `;
 
-export const Notification = styled.View`
-  margin-bottom: 4px;
-  background-color: #fff;
-  margin: 0 0 16px;
-  padding: 16px;
-  border: 1px solid #e7e7e7;
-  border-radius: 4px;
-`;
-
-export const NtTitle = styled.Text`
-  font-size: 16px;
-  font-weight: 700;
-  color: #4e4e4e;
-  margin-bottom: 4px;
-`;
-
-export const NtSubtitle = styled.Text`
-  font-size: 15px;
-  font-weight: 400;
-  color: #909090;
-`;
-
 export const Wrapper = styled.View`
   background-color: #fff;
   padding: 16px;

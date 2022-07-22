@@ -5,18 +5,16 @@ import {
   Header,
   BaseTitle,
   Title,
-  Notification,
   Subtitle,
-  NtTitle,
-  NtSubtitle,
   Wrapper,
   BaseTitleWrapper,
   WrapperTitle,
   Icon,
   Content,
 } from './styles';
+import { Info } from '../../components/Info';
+import { Card } from '../../components/Card';
 import { Button } from '../../components/Button';
-import { IndiceCard } from '../../components/Card';
 
 export function Dashboard() {
   return (
@@ -33,17 +31,14 @@ export function Dashboard() {
         <Icon />
       </Header>
 
-      <Notification>
-        <NtTitle>
-          Seja bem-vindo, Investor!
-        </NtTitle>
-        <NtSubtitle>
-          Você está utilizando a versão freemium (Limitada) do app.
-        </NtSubtitle>
-      </Notification>
+      <Info
+        type="notification"
+        title="Seja bem-vindo, Investor!"
+        subtitle="Você está utilizando a versão freemium (Limitada) do app."
+      />
 
       <IndiceCards>
-        <IndiceCard
+        <Card
           indicetitle="IFIX"
           indicevalue="2.714,62"
           indicevar="-1,05 (0,039%)"
@@ -51,7 +46,7 @@ export function Dashboard() {
           up="• Alta 115.310,91"
         />
 
-        <IndiceCard
+        <Card
           indicetitle="IBOV"
           indicevalue="115.310,91"
           indicevar="-2.234,58 (1,98%)"
@@ -59,7 +54,7 @@ export function Dashboard() {
           up="• Alta 2.720,15"
         />
 
-        <IndiceCard
+        <Card
           indicetitle="S&P 500"
           indicevalue="4.463,12"
           indicevar="-51,45 (1,17%)"
