@@ -6,7 +6,7 @@ import {
 } from './styles';
 
 interface Props {
-  type: 'default' | 'notification';
+  type: 'default' | 'createwallet' | 'notification';
   title: string;
   subtitle: string;
 }
@@ -14,8 +14,8 @@ interface Props {
 export function Info({ type, title, subtitle }: Props) {
   return (
     <Container type={type}>
-      <Title>{title}</Title>
-      <Subtitle>{subtitle}</Subtitle>
+      <Title type={type}>{title}</Title>
+      <Subtitle type={type}>{subtitle}</Subtitle>
     </Container>
   );
 }
