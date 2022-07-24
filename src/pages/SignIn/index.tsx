@@ -50,7 +50,8 @@ export function SignIn() {
         />
 
         <Button
-          type='default'
+          disabled={true}
+          type='disabled'
           title='Entrar'
         />
 
