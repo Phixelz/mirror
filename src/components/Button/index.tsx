@@ -6,7 +6,7 @@ import {
 } from './styles';
 
 interface Props extends TouchableOpacityProps {
-    type: 'default' | 'link';
+    type: 'default' | 'link' | 'disabled';
     title: string;
 }
 

@@ -1,7 +1,7 @@
 import styled, {css} from "styled-components/native";
 
 interface Props {
-  type: 'default' | 'link';
+  type: 'default' | 'link' | 'disabled';
 }
 
 export const CustomButton = styled.TouchableOpacity.attrs({
@@ -20,6 +20,11 @@ export const CustomButton = styled.TouchableOpacity.attrs({
   align-items: flex-end;
   padding: 0;
   margin-bottom: 8px;
+  `}
+
+  ${(props) => props.type === 'disabled' && css `
+  background-color: ${({ theme }) => theme.colors.primary_dark};
+  opacity: 0.4;
   `}
 `;
 
