@@ -6,9 +6,6 @@ import {
   BaseTitle,
   Title,
   Subtitle,
-  Wrapper,
-  BaseTitleWrapper,
-  WrapperTitle,
   Icon,
   Content,
 } from './styles';
@@ -67,21 +64,16 @@ export function Dashboard() {
         Minhas Carteiras
       </Subtitle>
 
-      <Wrapper>
-        <BaseTitleWrapper>
-          Você ainda não possui nenhuma carteira
-        </BaseTitleWrapper>
+      <Info
+        type='createwallet'
+        title='Você ainda não possui nenhuma carteira'
+        subtitle='Crie sua primeira carteira'
+      />
 
-        <WrapperTitle>
-          Crie sua primeira carteira
-        </WrapperTitle>
-
-        <Button
-          type='default'
-          title='Criar carteira'
-        />
-
-      </Wrapper>
-    </Container >
+      <Button
+        type='default'
+        title='Criar carteira'
+      />
+    </Container>
   );
 }

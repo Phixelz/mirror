@@ -47,23 +47,3 @@ export const Subtitle = styled.Text`
   margin-bottom: 8px;
   color: #404040;
 `;
-
-export const Wrapper = styled.View`
-  background-color: #fff;
-  padding: 16px;
-  border: 1px solid #e7e7e7;
-  border-radius: 4px;
-`;
-
-export const BaseTitleWrapper = styled.Text`
-  font-size: 16px;
-  font-weight: 400;
-  color: #909090;
-`;
-
-export const WrapperTitle = styled.Text`
-  font-size: 20px;
-  font-weight: 700;
-  color: #404040;
-  margin-bottom: 12px;
-`;
