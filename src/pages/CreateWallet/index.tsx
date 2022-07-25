@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import BottomSheet from "react-native-gesture-bottom-sheet";
 import {
   Container,
   Header,
@@ -11,11 +12,51 @@ import {
   Title,
   FooterTitle,
   FooterSubtitle,
-  TextView
+  TextView,
+  SheetContainer,
+  SheetList,
+  Section,
+  TypeText,
 } from './styles';
 import { Button } from '../../components/Button';
+import { Info } from '../../components/Info';
+
+const TypeList = [
+  {
+    id: '1',
+    type: 'type',
+    title: 'Fundos Imobiliários',
+    subtitle: 'Renda variável',
+  },
+  {
+    id: '2',
+    type: 'type',
+    title: 'Ações',
+    subtitle: 'Renda variável',
+  },
+  {
+    id: '3',
+    type: 'type',
+    title: 'ETFs',
+    subtitle: 'Renda variável',
+  },
+  {
+    id: '4',
+    type: 'type',
+    title: 'BDRs',
+    subtitle: 'Renda variável (EUA)',
+  },
+  {
+    id: '5',
+    type: 'type',
+    title: 'Tesouro Direto',
+    subtitle: 'Renda Fixa',
+  },
+];
 
 export function CreateWallet() {
+  const bottomSheet = useRef<BottomSheet>();
+
   return (
     <Container>
       <Header>
@@ -40,12 +81,13 @@ export function CreateWallet() {
             Tipo
           </Label>
           <TextInput
+            onPressIn={() => bottomSheet.current.show()}
             placeholder='Selecione'
             placeholderTextColor='#9E9E9E'
           />
 
           <Label>
-            Ticker
+            Ativo
           </Label>
           <TextInput
             placeholder='Ex: IRDM11'
@@ -94,10 +136,40 @@ export function CreateWallet() {
         </TextView>
 
         <Button
-          type='default'
+          disabled={true}
+          type='disabled'
           title='Criar carteira'
         />
 
+        <BottomSheet
+          ref={bottomSheet}
+          height={500}
+          sheetBackgroundColor={'#FFF'}
+        >
+          <SheetContainer>
+            <Section>
+              <TypeText>Selecione o tipo</TypeText>
+
+              <TextInput
+                placeholder='Pesquisar'
+                placeholderTextColor='#9E9E9E'
+              />
+            </Section>
+
+            <SheetList
+              data={TypeList}
+              renderItem={({ item }) => {
+                return (
+                  <Info
+                    type={item.type}
+                    title={item.title}
+                    subtitle={item.subtitle}
+                  />
+                )
+              }}
+            />
+          </SheetContainer>
+        </BottomSheet>
       </Footer>
     </Container>
   );

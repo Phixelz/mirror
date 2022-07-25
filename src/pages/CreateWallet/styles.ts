@@ -69,3 +69,23 @@ export const FooterSubtitle = styled.Text`
 
 export const TextView = styled.View`
 `;
+
+export const SheetContainer = styled.View`
+  flex: 1;
+  padding: 24px 16px;
+`;
+
+export const SheetList = styled.FlatList.attrs({
+  showsVerticalScrollIndicator: false,
+})`
+`;
+
+export const TypeText = styled.Text`
+  font-size: 20px;
+  font-weight: 700;
+  color: ${({ theme }) => theme.colors.primary};
+  margin-bottom: 16px;
+`;
+
+export const Section = styled.View`
+`;
