@@ -26,9 +26,11 @@ export const Title = styled.Text`
   color: ${({ theme }) => theme.colors.primary_dark};
 `;
 
-export const Wrapper = styled.ScrollView.attrs({
+export const Form = styled.ScrollView.attrs({
   showsVerticalIndicatorScroll: false,
 })`
+
+padding: 0 24px 0;
 `;
 
 export const Label = styled.Text`
@@ -36,10 +38,6 @@ export const Label = styled.Text`
   font-weight: 500;
   margin-bottom: 4px;
   color: ${({ theme }) => theme.colors.primary};
-`;
-
-export const Form = styled.View`
-  padding: 0 24px 0;
 `;
 
 export const TextInput = styled.TextInput`

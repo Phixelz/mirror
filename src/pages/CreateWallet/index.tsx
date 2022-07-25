@@ -4,7 +4,6 @@ import {
   Container,
   Header,
   Icon,
-  Wrapper,
   Label,
   Form,
   TextInput,
@@ -56,7 +55,6 @@ const TypeList = [
 
 export function CreateWallet() {
   const bottomSheet = useRef<BottomSheet>();
-
   return (
     <Container>
       <Header>
@@ -66,63 +64,59 @@ export function CreateWallet() {
         <Icon />
       </Header>
 
-      <Wrapper
-        showsVerticalScrollIndicator={false}>
-        <Form>
-          <Label>
-            Corretora
-          </Label>
-          <TextInput
-            placeholder='Nome da corretora'
-            placeholderTextColor='#9E9E9E'
-          />
+      <Form showsVerticalScrollIndicator={false}>
+        <Label>
+          Corretora
+        </Label>
+        <TextInput
+          placeholder='Nome da corretora'
+          placeholderTextColor='#9E9E9E'
+        />
 
-          <Label>
-            Tipo
-          </Label>
-          <TextInput
-            onPressIn={() => bottomSheet.current.show()}
-            placeholder='Selecione'
-            placeholderTextColor='#9E9E9E'
-          />
+        <Label>
+          Tipo
+        </Label>
+        <TextInput
+          onPressIn={() => bottomSheet.current.show()}
+          placeholder='Selecione'
+          placeholderTextColor='#9E9E9E'
+        />
 
-          <Label>
-            Ativo
-          </Label>
-          <TextInput
-            placeholder='Ex: IRDM11'
-            placeholderTextColor='#9E9E9E'
-          />
+        <Label>
+          Ativo
+        </Label>
+        <TextInput
+          placeholder='Ex: IRDM11'
+          placeholderTextColor='#9E9E9E'
+        />
 
-          <Label>
-            Quantidade
-          </Label>
-          <TextInput
-            placeholder='Ex: 1000'
-            keyboardType='numeric'
-            placeholderTextColor='#9E9E9E'
-          />
+        <Label>
+          Quantidade
+        </Label>
+        <TextInput
+          placeholder='Ex: 1000'
+          keyboardType='numeric'
+          placeholderTextColor='#9E9E9E'
+        />
 
-          <Label>
-            Valor investido
-          </Label>
-          <TextInput
-            placeholder='R$ 0,00'
-            keyboardType='numeric'
-            placeholderTextColor='#9E9E9E'
-          />
+        <Label>
+          Valor investido
+        </Label>
+        <TextInput
+          placeholder='R$ 0,00'
+          keyboardType='numeric'
+          placeholderTextColor='#9E9E9E'
+        />
 
-          <Label>
-            Período
-          </Label>
-          <TextInput
-            placeholder='Ex: 12'
-            keyboardType='numeric'
-            placeholderTextColor='#9E9E9E'
-          />
-
-        </Form>
-      </Wrapper>
+        <Label>
+          Período
+        </Label>
+        <TextInput
+          placeholder='Ex: 12'
+          keyboardType='numeric'
+          placeholderTextColor='#9E9E9E'
+        />
+      </Form>
 
       <Footer>
         <TextView>
