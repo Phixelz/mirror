@@ -41,8 +41,8 @@ export const TickerTitle = styled.Text`
 `;
 
 export const TickerValue = styled.Text<Props>`
-  font-size: 17px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 700;
   color: ${({ theme }) => theme.colors.primary};
   line-height: 32px;
 
@@ -60,6 +60,12 @@ export const Manager = styled.Text`
   font-weight: 400;
   color: ${({ theme }) => theme.colors.secondary};
   line-height: 24px;
+`;
+
+export const Divider = styled.View`
+  border-bottom-width: 1px;
+  border-color: ${({ theme }) => theme.colors.primary_light};
+  margin: 12px 0;
 `;
 
 export const Footer = styled.Text`

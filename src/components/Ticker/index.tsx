@@ -7,6 +7,7 @@ import {
   TickerTitle,
   TickerValue,
   Manager,
+  Divider,
   Footer,
 } from './styles';
 
@@ -35,6 +36,7 @@ export function Ticker({
       </Header>
 
       <Manager>{manager}</Manager>
+      <Divider />
 
       <Footer>
         <TickerValue type={type}>{tickervalue}</TickerValue>

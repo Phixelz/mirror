@@ -6,7 +6,7 @@ import {
 } from './styles';
 
 interface Props {
-  type: 'default' | 'createwallet' | 'notification';
+  type: 'default' | 'createwallet' | 'notification' | 'type';
   title: string;
   subtitle: string;
 }
